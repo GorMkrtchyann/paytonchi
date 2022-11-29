@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/faytonchi-favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Ֆայտոնչի</title>
+</head>
+<body>
+    <main class="body">
+
+        <nav class="menu">
+            <div class="container home">
+                <div class="menu__logo">
+                    <img src="./img/faytonchi.png" alt="logo">
+                </div>
+                
+                <ul>
+                    <li class="regist home"><a href="#" style="font-weight: 600;">+ Ավելացնել</a></li>
+                    <li class="loginn" onclick="HomeOut()"><a>Montana <i class="fa-solid fa-user-large"></i></a></li>
+                </ul>
+
+                <p class="out"><a href="#" style="font-weight: 600;">+ Ավելացնել</a> <span>Դուրս Գալ <i class="fa-solid fa-arrow-right-from-bracket"></i></span></p>
+
+            </div>
+        </nav>
+
+        <div class="info-language">
+            <a href="#" class="info">i</a>
+
+            <div class="language-change">
+                <img src="./img/image 11.png" alt="">     
+                <ul>
+                    <li id="google_element"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hidden-block"></div>
+        
+        <header class="header">
+            <div class="header__search">
+                <input type="text" class="next" name="" id="search" placeholder="Որոնում․․․">
+    
+                <button id="search-button" class="next"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </header>
+
+        <section class="main" style="display: block  ">
+            <div class="container">
+                <div class="main-filter">
+                    <div class="filter-mob-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m318.49 130.223h37.6a45.941 45.941 0 0 1 86.132 0h53.778a16 16 0 0 1 0 32h-53.776a45.94 45.94 0 0 1 -86.13 0h-37.6a16 16 0 0 1 0-32zm177.51 115.433h-143.9a45.94 45.94 0 0 0 -86.131 0h-18.709a16 16 0 1 0 0 32h18.708a45.94 45.94 0 0 0 86.131 0h143.901a16 16 0 0 0 0-32zm0 115.432h-17.533a45.94 45.94 0 0 0 -86.131 0h-145.076a16 16 0 1 0 0 32h145.076a45.94 45.94 0 0 0 86.131 0h17.533a16 16 0 0 0 0-32zm-194.359-260.588a26.938 26.938 0 0 0 -21.072-43.72h-253.597a26.938 26.938 0 0 0 -21.072 43.712l7.484 9.4h280.776zm-262.917 41.221 68.416 85.928v211.576a16 16 0 0 0 24 13.857l61.261-35.37a16 16 0 0 0 8-13.856v-176.207l68.416-85.928z" fill="#ffffff" data-original="#ffffff" class=""></path></g></svg>
+                    </div>
+                    
+                    <div class="fiter">
+                        <div class="fiter-mob-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <h3>Ֆիլտրում ըստ՝</h3>
+                        <details open class="fiter__item">
+                            <summary class="fiter__item__header">
+                                <p>Տեսակի</p>
+                                <i class="fa-solid fa-plus"></i>
+                            </summary>
+                            <div class="fiter__item__body"></div>
+                        </details>
+
+                        <details class="fiter__item comingsoon">
+                            <summary class="fiter__item__header">
+                                <p>Թաղամասերի</p>
+                                <i class="fa-solid fa-plus"></i>
+                            </summary>
+                            <div class="fiter__item__body"></div>
+                        </details>
+
+                    </div>
+                </div>
+
+                <div class="main-contant">
+                    <a href="#" class="toTop"><i class="fa-solid fa-chevron-up"></i></a>
+                    <details class="contant" style="display: flex" data-types="Դպրոց" data-search="անի">
+                        <summary class="contant__item__header">
+                            <img src="" alt="">
+                            <div class="c1">
+                                <h3>Scientech</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <div>
+                                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:">example@example.com</a></p>
+                                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+">+374 12 345678</a></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> <a href="">Str. Adasdr. asad. ssssssssss</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <p></p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </summary>
+                        <div class="contant__item__body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <iframe src="https://goo.gl/maps/Jo4Z2bP7G7La6CAw6" frameborder="0"></iframe>
+                        </div>
+                    </details>
+
+                    <details class="contant" style="display: flex" data-types="Դպրոց" data-search="Դպրոց" >
+                        <summary class="contant__item__header">
+                            <img src="" alt="">
+                            <div class="c1">
+                                <h3>Scientech</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <div>
+                                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:">example@example.com</a></p>
+                                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+">+374 12 345678</a></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> <a href="">Str. Adasdr. asad. ssssssssss</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <p></p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </summary>
+                        <div class="contant__item__body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9302382949527!2d43.83048456657697!3d40.82949595983142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041f9a0b5dccd5b%3A0xf951e03d008e35fb!2z0KjQuNGA0LDQutGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2s!4v1665946417856!5m2!1sru!2s" frameborder="0"></iframe>
+                        </div>
+                    </details>
+                    <details class="contant" style="display: flex" data-types="Եկեղեցի" data-search="անի">
+                        <summary class="contant__item__header">
+                            <img src="" alt="">
+                            <div class="c1">
+                                <h3>Scientech</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <div>
+                                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:">example@example.com</a></p>
+                                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+">+374 12 345678</a></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> <a href="">Str. Adasdr. asad. ssssssssss</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <p></p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </summary>
+                        <div class="contant__item__body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9302382949527!2d43.83048456657697!3d40.82949595983142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041f9a0b5dccd5b%3A0xf951e03d008e35fb!2z0KjQuNGA0LDQutGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2s!4v1665946417856!5m2!1sru!2s" frameborder="0"></iframe>
+                        </div>
+                    </details>
+
+                    <details class="contant" style="display: flex" data-types="ԲՈՒՀ" data-search="անի" >
+                        <summary class="contant__item__header">
+                            <img src="" alt="">
+                            <div class="c1">
+                                <h3>Scientech</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <div>
+                                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:">example@example.com</a></p>
+                                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+">+374 12 345678</a></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> <a href="">Str. Adasdr. asad. ssssssssss</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <p></p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </summary>
+                        <div class="contant__item__body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.9302382949527!2d43.83048456657697!3d40.82949595983142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041f9a0b5dccd5b%3A0xf951e03d008e35fb!2z0KjQuNGA0LDQutGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2s!4v1665946417856!5m2!1sru!2s" frameborder="0"></iframe>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_element'
+            );
+        }
+    </script>
+</body>
+</html>

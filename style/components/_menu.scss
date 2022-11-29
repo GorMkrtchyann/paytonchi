@@ -1,0 +1,179 @@
+.menu{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        position: relative;
+        @media screen and (max-width: 450px) {
+            justify-content: center;
+        }
+    }
+    &__logo{
+        img{
+            width: 150px;
+            @media screen and (max-width: 450px) {
+                width: 120px;
+            }
+        }
+    }
+    & .container > ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media screen and (max-width: 450px) {
+            gap: 10px;
+        }
+        li{
+            list-style: none;
+            cursor: pointer;
+            &:first-child{
+                padding: 5px 7px;
+                a{
+                    color: var(--gray-black);
+                }
+                @media screen and (max-width: 450px) {
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+            &:last-child{
+                background-color: var(--gray-black);
+                padding: 12px 30px;
+                border-radius: 20px 0px;
+                a{
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: #FFFFFF;
+                }
+                @media screen and (max-width: 450px) {
+                    padding: 8px 20px;
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.info-language{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    right: 20px;
+    z-index: 6;
+    top: 20px;
+    .info{
+        font-family: 'Aref Ruqaa', serif;
+        font-weight: 700;
+        font-size: 22px;
+        text-decoration: none;
+        font-style: italic;
+        background-color: var(--gray-black);
+        color: #FFFFFF;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-right: 4px;
+        padding-bottom: 8px;
+    }
+    .language-change{
+        img{
+            width: 29px;
+            margin-top: 2px;
+            cursor: pointer;
+        }
+        ul{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 60px;
+            list-style: none;
+            background-color: #fff;
+            padding: 3px 10px;
+            border: 2px solid var(--gray-black);
+            border-radius: 50px;
+            height: 24px;
+            overflow: hidden;
+            select{
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1320px){
+        top: 85px;
+        z-index: 4;
+        // position: absolute;
+        .info{
+            border: 3px solid #fff;
+        }
+        .language-change{
+            background-color: #fff;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding-bottom: 2px;
+            box-sizing: border-box;
+            ul{
+                top: 40px;
+            }
+        }
+    }
+}
+
+.out{
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #fff;
+    padding: 12px 17px;
+    border-radius: 0 0 15px 15px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    a{
+        color: #000;
+        text-decoration: none;
+        display: none;
+    }
+    @media screen and (max-width: 450px) {
+        top: 64px;
+        font-size: 13px;
+        padding: 9px 13px;
+        a{
+            display: block;
+        }
+    }
+}
+.regist.home{
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
+}
+
+.container.home{
+    @media screen and (max-width: 450px) {
+        justify-content: space-between;
+    }
+}

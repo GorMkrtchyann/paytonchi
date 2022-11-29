@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/faytonchi-favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Ֆայտոնչի / Մեր Մասին</title>
+</head>
+<body>
+    <main class="body ap">
+
+        <nav class="menu">
+            <div class="container">
+                <div class="menu__logo">
+                    <img src="../img/faytonchi.png" alt="logo">
+                </div>
+                
+                <ul>
+                    <li class="regist"><a href="#">Գրանցում</a></li>
+                    <li class="login"><a href="#">Մուտք</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="info-language">
+            <a href="../index.html" class="home"><i class="fa-solid fa-house"></i></a>
+
+            <div class="language-change">
+                <img src="../img/image 11.png" alt="" onclick="langChange()">     
+                <ul>
+                    <li id="google_element"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hidden-block"></div>
+        
+        <header class="header">
+            <img src="../img/faytonchi-w.png" alt="logo">
+        </header>
+
+        <section class="about">
+            <div class="container">
+                <h2>Ֆայտոնչի / Faytonchi</h2>
+                <p>Կայքի ստեղծման գաղափարն առաջացել է, 2022թ.-ի հոկտեմբերին՝ երբ կայքի ստեղծողը նկատեց մի խնդիր, որ զբոսաշրջիկները, այլ ազգից այստեղ բնակություն հաստատաց, կամ մարզերում ապրող մարդիկ գալիս են Գյումրի և չեն կարողանում հստակ գտնել իրենց անհրաժեշտ վայրը․ այդ պատճառով էլ հենց նույն թվականին ստեղծվեց կայքը։</p>
+                <p>Այն հնարավորություն է տալիս, ոչ միայն Գյումրիում բնակվող մարդկանց, այլ նաև զբոսաշրջիկներին, արտ երկրից եկած բնակություն հաստատած մարդիկանց, այլ մարզերում բնակվող մարդիկանց գտնեն իրենց հետաքրքրած կառույցը Գյումրի քաղաքում։</p>
+                <b>Կայքն ունի մի քանի առանձնահատկություններ՝</b>
+                <ul>
+                    <li>Ազատ մուտք բոլորի համար</li>
+                </ul>
+                <p>(անկախ տարիքից՝  բոլորը կարող են մուտք գործել կայք, և Գյումրիում գտնվող որևէ կառույցի մասին տեղեկություն տեղադրել՝ այն հանդիսանում է ազատ հարթակ)</p>
+                <ul>
+                    <li>Թարգմանության հնարավորություն ցանկացած լեզվով</li>
+                </ul>
+                <p>(լեզվային համամատչելիությունը՝ զբոսաշրջիկներին թույլ է տալիս, հեշտ օգտվել կայքից)</p>
+                <ul>
+                    <li>Հարմար ինտերֆեյս</li>
+                </ul>
+                <p>(մարդիկ կկարողանան ավելի հեշտ և հարմարավետ օգտվել կայքից)</p>
+                <ul>
+                    <li>Ֆիլտրում (տեսակավորում)</li>
+                </ul>
+                <p>(կայք մուտք գործողը, կարող է կայքի ներսում գտնվող տեղեկությունները տեսակավորել  ըստ՝ տեսակների և շուտով թաղամասերի) </p>
+
+                <h3>Լոգո</h3>
+                <p>Ստեղծելով ինչ որ ՏՏ պրոեկտ, նրա կարևոր մասն է դառնում՝ լոգոն, որը պետք է ինչ որ բան պատմի կայքի մասին, այս փաստը հաշվի առնելով ստեղծեցինք մեր լոգոն։ </p>
+                <p>Հնում Գյումրիում միակ տրանսպորտային միջոցը՝ եղել է ֆայտոնը, մարդիկ ֆայտոնից օգտվելիս՝ վարորդին ասել են այն վայրը, որտեղ որ պետք է գնան, և ֆայտոնչին նրանց հասցրել է այդ վայրը։ Մարդիկ մուտք գործելով «Ֆայտոնչի» կայք, կկարողանան հեշտությամբ գտնել իրենց հետաքրքրող վայրի մասին տվյալներ։</p>
+                <p>Կայքի լոգոյի մեջ, օգտագործված է ֆայտոնից մի մաս՝ անիվը առանց որի, այն չի կարող շարժվել։ Անիվին ավելացրած է, ֆայտոն վարողի հին գլխարկ։ Լոգոյում ներկայացվել է կրեատիվ ֆայտոնչի։ </p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_element'
+            );
+        }
+    </script>
+</body>
+</html>

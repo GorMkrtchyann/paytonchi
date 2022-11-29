@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/faytonchi-favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Ֆայտոնչի / Գրանցում</title>
+</head>
+<body class="registration">
+    <div class="body">
+        <div class="info-language">
+            <a href="../index.html" class="home"><i class="fa-solid fa-house"></i></a>
+
+            <div class="language-change">
+                <img src="../img/image 11.png" alt="" onclick="langChange()">     
+                <ul>
+                    <li id="google_element"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <img class="logo" src="../img/faytonchi-w.png" alt="" onclick='sessionStorage.setItem("key", "Mdfdfgdy");'>
+
+            <div class="block">
+                <h2>Գրանցում</h2>
+                <form action="" method="post">
+                    <div>
+                        <label for="name">Անուն</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Էլ․ Հասցե</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Գախտնաբառ</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="btn">
+                        <button type="reset">Չեղարկել</button>
+                        <button type="submit">Գրանցում</button>
+                    </div>
+                </form>
+                <p>Հաշիվ չունենալու դեպքում՝ <a href="#">Մուտք</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'hy'},
+                'google_element'
+            );
+        }
+
+    </script>
+</body>
+</html>

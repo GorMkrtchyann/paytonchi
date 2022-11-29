@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/faytonchi-favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Ֆայտոնչի / Տեղեկության Ավելացում</title>
+</head>
+<body class="add">
+    <div class="body">
+        <div class="info-language">
+            <a href="../index.html" class="home"><i class="fa-solid fa-house"></i></a>
+
+            <div class="language-change">
+                <img src="../img/image 11.png" alt="" onclick="langChange()">     
+                <ul>
+                    <li id="google_element"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <img class="logo" src="../img/faytonchi-w.png" alt="">
+
+            <div class="block step-1" style="display: block;">
+                    <h2>Տեղեկության Ավելացում</h2>
+                    <div class="steps">
+                        <span class="number active">1</span>
+                        <span class="line"></span>
+                        <span class="number">2</span>
+                        <span class="line"></span>
+                        <span class="number">3</span>
+                        <span class="line"></span>
+                        <span class="number">4</span>
+                    </div>
+                    <form action="" method="post">
+                        <div>
+                            <label for="name">Անուն</label>
+                            <input type="text" name="name" id="name" class="inputs" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Էլ․ Հասցե</label>
+                            <input type="email" name="email" id="email" class="inputs" required>
+                        </div>
+
+                        <div>
+                            <label for="andress">Հասցե</label>
+                            <input type="text" name="andress" id="andress" class="inputs" required>
+                        </div>
+
+                        <div>
+                            <label for="phone">Հեռախոսահամար</label>
+                            <input type="tel" name="phone" id="phone" value="+374" class="inputs" required>
+                        </div>
+
+                        <div class="btn">
+                            <button type="reset">Չեղարկել</button>
+                            <button type="button" class="next-step">Առաջ <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </form>
+            </div>
+
+            <div class="block step-2" style="display: none;">
+                    <h2>Տեղեկության Ավելացում</h2>
+                    <div class="steps">
+                        <span class="number active">1</span>
+                        <span class="line active"></span>
+                        <span class="number active">2</span>
+                        <span class="line"></span>
+                        <span class="number">3</span>
+                        <span class="line"></span>
+                        <span class="number">4</span>
+                    </div>
+                    <form action="" method="post">
+                        <div>
+                            <b class="text-count">150</b>
+                            <label for="short-about">Կարճ Նկարագիր</label>
+                            <textarea style="height: 70px;" class="textarea inputs"
+                            name="shortAbout" id="short-about" cols="30" rows="10" maxlength="150"></textarea>
+                        </div>
+
+                        <div>
+                            <b class="text-count">255</b>
+                            <label for="long-about">Երկար Նկարագիր</label>
+                            <textarea name="longAbout" class="textarea inputs" id="long-about" cols="30" rows="10" maxlength="255"></textarea>
+                        </div>
+
+                        <div class="btn">
+                            <button type="reset">Չեղարկել</button>
+                            <button type="button" class="prev-step"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button type="button" class="next-step">Առաջ <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </form>
+            </div>
+
+            <div class="block step-3" style="display: none;">
+                <h2>Տեղեկության Ավելացում</h2>
+                <div class="steps">
+                    <span class="number active">1</span>
+                    <span class="line active"></span>
+                    <span class="number active">2</span>
+                    <span class="line active"></span>
+                    <span class="number active">3</span>
+                    <span class="line"></span>
+                    <span class="number">4</span>
+                </div>
+                <form action="" method="post">
+                    <div>
+                        <label for="map-link">Քարտեզային Լինկը <a href="">Իմանալ Ավելին</a></label>
+                        <input type="url" name="mapLink" id="map-link" class="inputs">
+                    </div>
+
+                    <div>
+                        <label for="logo">Լոգո <b>Ներբեռնել միայն .jpg և .png տեսակի ֆայլեր</b></label>
+                        <input type="file" name="logo" id="logo" class="inputs">
+                    </div>
+
+                    <div class="btn">
+                        <button type="reset">Չեղարկել</button>
+                        <button type="button" class="prev-step"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" class="next-step">Առաջ <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="block step-4" style="display: none;">
+                <h2>Տեղեկության Ավելացում</h2>
+                <div class="steps">
+                    <span class="number active">1</span>
+                    <span class="line active"></span>
+                    <span class="number active">2</span>
+                    <span class="line active"></span>
+                    <span class="number active">3</span>
+                    <span class="line active"></span>
+                    <span class="number active">4</span>
+                </div>
+                <form action="" method="post">
+                    <div>
+                        <label for="types">Տեսակը</label>
+                        <div>
+                            <b>Ընտրել այս ցանկից միայն մեկը</b>
+                            <div id="add-types"></div>
+                        </div>
+                        <input type="text" name="types" id="types" class="inputs" required>
+                    </div>
+
+                    <div>
+                        <label for="search">Մի Քանի Հուշող բառեր</label>
+                        <input type="text" name="search" id="search" class="inputs">
+                    </div>
+
+                    <div class="saveValue" id="saveValue">
+                        <input type="checkbox" name="" id="savevalue">
+                        <label for="savevalue">Պահպանել Մուտքագրված Բոլոր Ինֆորմացիան</label>
+                    </div>
+
+                    <div class="btn">
+                        <button type="reset">Չեղարկել</button>
+                        <button type="button" class="prev-step"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button type="submit">Ավելացնել</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/add.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'hy'},
+                'google_element'
+            );
+        }
+
+    </script>
+</body>
+</html>
